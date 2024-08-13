@@ -120,6 +120,8 @@ void modes(){
         else if(getButtonPress(buttonRight)){
             hardMode();
         }
+}
+
 int startup(){
     displayString(6, "Welcome to PING PONG BALL LAUNCHER");
     displayString(8, "Press Enter to start");
