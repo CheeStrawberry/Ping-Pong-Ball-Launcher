@@ -12,3 +12,18 @@ void configureSensors(){
 
     return; 
 }
+
+void startCountdownMusic(){
+    // play "5" tone
+    for(int i=0; i<3; i++)
+    {
+        playTone(200,75);
+        wait1Msec(1200);
+    }
+
+    // play "1" tone
+    playTone(500,75);
+    wait1Msec(1200);
+
+    return;
+}
