@@ -27,3 +27,19 @@ void startCountdownMusic(){
 
     return;
 }
+
+void shootBall(int motor_pow){
+    const int SLOW_SPEED_MOTOR=10;
+    nMotorEncoder[motorA]=0;
+
+    motor[motorA]=motor_pow;
+    while(nMotorEncoder[motorA]<180)
+    {}
+    motor[motorA]=0;
+    wwait1Msec(1000);
+
+    motor[motorA] = SLOW_SPEED_MOTOR;
+    while(nMotorEncoder[motorA]<360)
+    {}
+    motor[motorA]=0;
+}
