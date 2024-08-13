@@ -66,3 +66,17 @@ void rotateBot(int motor_pow,float angle){
         motor[motorD]=motor[motorB]=0;
     }
 }
+
+void checkUltrasonic( int motor_pow_shoot, int motor_pow_rotate, int angle, int waitTime, int helpTimer){
+    while(SensorValue[S1]<4.5){
+        if(helpTimer==1)
+        startCountdownMusic();
+
+        shootBall(motor_pow_shoot);
+        wait1Msec(500);
+        rotateBot(motor_pow_rotate, angle);
+        angle*=-1;
+    }
+
+    return;
+}
