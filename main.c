@@ -43,3 +43,26 @@ void shootBall(int motor_pow){
     {}
     motor[motorA]=0;
 }
+
+void rotateBot(int motor_pow,float angle){
+    if (angle>0){
+        motor[motorD]=-1*motor_pow;
+        motor[motorB]=motor_pow;
+        displayString(2,"yay");
+
+        while(getGyroDegrees(S4)<angle){
+            displayString(4,"%d",getGyroDegrees(S4));
+        }
+        motor[motorD]=motor[motorB]=0;
+        }
+    else if (angle<0){
+        motor[motorD]=motor_pow;
+        motor[motorB]=-1*motor_pow;
+        displayString(2,"boo");
+
+        while(getGyroDegress(S4)>angle){
+            displayString(4,"%d",getGyroDegrees(S4));
+        }
+        motor[motorD]=motor[motorB]=0;
+    }
+}
