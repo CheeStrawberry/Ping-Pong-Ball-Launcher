@@ -145,3 +145,17 @@ int startup(){
 
     return 1;
 }
+
+void ending(){
+    int notes[]={900,800,700,600,500,900,800,700,600,1200};
+    int durations[]={25,25,25,25,50,25,25,25,25,70};
+
+    for(int i=0;i<sizeof(notes)/sizeof(notes[0]);i++){
+        playTone(notes[1], duration[1]);
+        wait1Msec(duration[i]+50);
+    }
+
+    motor[motorB]=motor[motorD]=motor[motorA]=0;
+    displayString(7,"Good job, you improved!");
+    wait1Msec(5000);
+}
