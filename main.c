@@ -91,3 +91,15 @@ void mediumMode(){
 
     return;
 }
+
+void hardMode(){
+    const int SHOOT_POW=100;
+    const int ROTATE_POW=20;
+    int ROTATE_ANGLE=-15;
+    const int WAIT_TIME=1500;
+    const int HELPTIMER=0;
+    startCountdownMusic();
+    checkUltrasonic(SHOOT_POW, ROTATE_POW, ROTATE_ANGLE, WAIT_TIME, HELPTIMER);
+
+    return;
+}
