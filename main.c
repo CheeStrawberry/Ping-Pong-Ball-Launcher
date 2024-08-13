@@ -159,3 +159,16 @@ void ending(){
     displayString(7,"Good job, you improved!");
     wait1Msec(5000);
 }
+
+task main(){
+    configureSensors();
+    wait1Msec(20);
+
+    int readyToPlay=startup();
+
+    if(readyToPlay==1){
+        modes();
+    }
+    eraseDisplay();
+    ending();
+}
