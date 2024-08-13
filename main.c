@@ -80,3 +80,14 @@ void checkUltrasonic( int motor_pow_shoot, int motor_pow_rotate, int angle, int 
 
     return;
 }
+
+void mediumMode(){
+    const int SHOOT_POW=100;
+    const int ROTATE_POW=20;
+    int ROTATE_ANGLE=-15;
+    const int WAIT_TIME=1500;
+    const int HELPTIMER=1;
+    checkUltrasonic(SHOOT_POW, ROTATE_POW, ROTATE_ANGLE, WAIT_TIME, HELPTIMER);
+
+    return;
+}
