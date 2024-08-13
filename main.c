@@ -103,3 +103,21 @@ void hardMode(){
 
     return;
 }
+
+void modes(){
+    displayString(4, "Select the level for difficulty");
+    displayString(5, "Select Left Button for Easy Mode");
+    displayString(6, "Select Down BUtton for MEdium Mode");
+    displayString(7, "Select Right Button for Hard Mode");
+
+    while(!getButtonPress(ANY_BUTTON)){}
+        if(getButtonPress(buttonLeft)){
+            checkUltrasonic(100,0,0,1000,1)
+        }
+        else if(getButtonPress(buttonDown)){
+            mediumMode();
+        }
+        else if(getButtonPress(buttonRight)){
+            hardMode();
+        }
+}
