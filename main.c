@@ -120,4 +120,26 @@ void modes(){
         else if(getButtonPress(buttonRight)){
             hardMode();
         }
+int startup(){
+    displayString(6, "Welcome to PING PONG BALL LAUNCHER");
+    displayString(8, "Press Enter to start");
+
+    // initialise the timer
+    time1[T1]=0;
+
+    while(!getButtonPress(ENTER_BUTTON)){
+        if(time1[T1]>10000){
+            displayString(10, "Time limit reached. Returning 0.");
+
+            // return 0 if the time limit is exceeded
+            return 0;
+        }
+        
+        // short delay to avoid continuous checking
+        wait1Msec(10);
+    }
+
+    while(getButtonPress(ENTER_BUTTON)){}
+
+    return 1;
 }
