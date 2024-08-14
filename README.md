@@ -51,6 +51,20 @@ To get started, you'll need to install the RobotC IDE, connect your LEGO robot, 
   - Gyro Sensor
   - Motors connected to Ports A, B, and D
 
+## Pictures 🖼️
+
+*Vertical Storage System:*
+
+![Vertical Storage](https://github.com/user-attachments/assets/008da1d2-d9e3-443a-884e-7d2099b96ba0)
+
+*Tension based Shooting Mechanism:*
+
+![Shooting Mechanism](https://github.com/user-attachments/assets/1485feec-aec8-44d1-b66a-eac0a7c50ff6)
+
+*Ultrasonic Sensor used to detect if more balls are left:*
+
+![Ultrasonic Sensor](https://github.com/user-attachments/assets/c212a907-c429-4d2d-8931-5a27b6f99a8b)
+
 ## License 📜
 
 This project is licensed under the MIT License. Check out the LICENSE file for more details.
