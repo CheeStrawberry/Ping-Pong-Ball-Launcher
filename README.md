@@ -4,7 +4,7 @@ Ever wanted to play ping pong but don’t have a partner? No worries, I’ve got
 
 To get started, you'll need to install the RobotC IDE, connect your LEGO robot, and load the code into it. Once everything is set up, you’re ready to code, create, and enjoy some high-tech ping pong action!
 
-## Features ✨
+## Features 
 
 - **Targeting with Sensors**:
   - **Ultrasonic Sensor**: Detects objects and triggers the ball launch when in range. 
@@ -21,7 +21,7 @@ To get started, you'll need to install the RobotC IDE, connect your LEGO robot, 
   - **Medium Mode**: Adds rotational challenges for more fun. 
   - **Hard Mode**: For experts, with complex movements and no countdown assist. 
 
-## Project Structure 🛠️
+## Project Structure 
 
 - **configureSensors()**: Sets up the Ultrasonic and Gyro sensors to make sure your robot is ready for action.
 - **startCountdownMusic()**: Plays a cool countdown sequence before the ball is launched.
@@ -34,14 +34,14 @@ To get started, you'll need to install the RobotC IDE, connect your LEGO robot, 
 - **startup()**: Prepares the robot and waits for you to kick off the game.
 - **ending()**: Wraps up the game with a fun tune and a message of encouragement!
 
-## How to Play 🎮
+## How to Play 
 
 1. **Assemble**: Build your EV3 robot with the Ultrasonic and Gyro sensors, and connect the motors as per the instructions.
 2. **Upload**: Send the code to your EV3 brick using the RobotC IDE.
 3. **Play**: Run the program on your EV3. Choose your difficulty, and get ready to launch some ping pong balls!
 4. **Enjoy**: Watch your robot in action and challenge your friends to see who can hit the most targets!
 
-## Requirements 📋
+## Requirements 
 
 - LEGO Mindstorms EV3 kit
 - RobotC IDE
@@ -51,7 +51,7 @@ To get started, you'll need to install the RobotC IDE, connect your LEGO robot, 
   - Gyro Sensor
   - Motors connected to Ports A, B, and D
 
-## Pictures 🖼️
+## Pictures 
 
 *Vertical Storage System:*
 
@@ -65,7 +65,7 @@ To get started, you'll need to install the RobotC IDE, connect your LEGO robot, 
 
 ![Ultrasonic Sensor](https://github.com/user-attachments/assets/c212a907-c429-4d2d-8931-5a27b6f99a8b)
 
-## License 📜
+## License 
 
 This project is licensed under the MIT License. Check out the LICENSE file for more details.
 
